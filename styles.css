@@ -1,0 +1,154 @@
+/*Global Starts*/
+
+* {
+  font: 14px/1.5 Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: rgb(55, 10, 0);
+}
+
+.global-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 754px;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  color: white;
+}
+
+/*Global Ends*/
+
+/*Header Start*/
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+img[src^="media/coffee-cup"] {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  top: 0;
+  z-index: -1;
+}
+
+/*Header Ends*/
+
+/*Global Section Text Manipulation*/
+
+.topic {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.section-title {
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* End Of Global Section Text Manipulation*/
+
+/*Ways to make Coffee Section*/
+
+.section-title-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  background: rgb(0, 81, 115);
+}
+
+.methods-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #a27250;
+  width: 100%;
+  height: 400px;
+  padding-bottom: 30px;
+}
+
+.methods-container {
+  display: flex;
+  justify-content: space-around;
+  height: 80%;
+}
+
+.methods-container div[class^="method"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+
+div[class^="method"] .topic {
+  height: 20%;
+}
+
+div[class^="method"] img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+
+div[class^="method"] img:hover {
+  filter: brightness(50%);
+  cursor: pointer;
+}
+
+/*Ways to make Coffee Section Ends*/
+
+/*The Benefits of Coffee Section*/
+
+.benefits-section {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 100%;
+  background: #a27250;
+}
+
+.benefit-list-item {
+  display: flex;
+  align-self: flex-start;
+  margin-left: 10px;
+  list-style: none;
+  font-size: 1.3em;
+}
+
+/*The Benefits of Coffee Section Ends*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: grey;
+  padding-top: 10px;
+}
+footer input[type="button"] {
+  height: 40px;
+  width: 100px;
+  margin: 10px;
+
+}
